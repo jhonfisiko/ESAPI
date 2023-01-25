@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AUTOSBRT", "AUTOSBRT.csproj", "{06AEE5A7-4199-4807-860C-CF1DB4BA1B0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06AEE5A7-4199-4807-860C-CF1DB4BA1B0E}.Debug|x64.ActiveCfg = Debug|x64
+		{06AEE5A7-4199-4807-860C-CF1DB4BA1B0E}.Debug|x64.Build.0 = Debug|x64
+		{06AEE5A7-4199-4807-860C-CF1DB4BA1B0E}.Release|x64.ActiveCfg = Release|x64
+		{06AEE5A7-4199-4807-860C-CF1DB4BA1B0E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18A04EA8-40F6-486C-A3E9-4D662A5A522F}
+	EndGlobalSection
+EndGlobal

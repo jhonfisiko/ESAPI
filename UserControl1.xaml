@@ -1,0 +1,112 @@
+﻿<UserControl x:Class="AUTOSBRT.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AUTOSBRT"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="0,-1,0,1">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="1">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FFA53EFF" Offset="0.043"/>
+                <GradientStop Color="#FF771D6F" Offset="0.74"/>
+                <GradientStop Color="#FF4A124A" Offset="0.91"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="267*" />
+            <ColumnDefinition Width="296*" />
+            <ColumnDefinition Width="237*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="2" Grid.Column="1"   FontFamily="Times New Roman" FontSize="48" Name="casa" />
+        <Label Content="AUTO SBRT" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" FontFamily="Times New Roman" FontSize="48" FontWeight="Bold" Width="296"  />
+        <Label Content="Elija su script"  Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Times New Roman" FontWeight="Bold" FontSize="36" Foreground="Black" >
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFEEA4FF" Offset="0"/>
+                    <GradientStop Color="#FFB87FC6"/>
+                    <GradientStop Color="#FF775280" Offset="0.913"/>
+                </LinearGradientBrush>
+            </Label.Background>
+
+        </Label>
+
+
+        <ComboBox Grid.Row="1" Grid.Column="1" Margin="10" SelectionChanged="ComboBox_SelectionChanged" Name="Cb1" FontFamily="Times New Roman" FontSize="18" FontWeight="Bold" >
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFE22BCA"/>
+                    <GradientStop Color="#FFA13BF1" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem Content="SBRT"/>
+            <ComboBoxItem Content="CREAR ESTRUCTURA HDA"/>
+            <ComboBoxItem Content=" CREAR VERIFICADORAS Y CBCT"/>
+            <ComboBoxItem Content="CREAR PLAN" />
+            <ComboBoxItem Content="CREAR ESTRUCTURAS Y VERIFICACION DE ESTRUCTURAS" />
+        </ComboBox>
+
+        <Label Content="Autoplanning v 1.1 " Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center" FontFamily="Times New Roman" FontWeight="Bold" FontSize="24">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+
+        <!-- This button is in progress -->
+
+        <Button Content="Clinical goals" Grid.Column="0" Grid.Row="4"  Height="40" Width="130" FontFamily="Times New Roman" FontWeight="Bold" FontSize="18" Click="Button_Click_2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF717171" Offset="0.907"/>
+                    <GradientStop Color="#FFB4B4B4" Offset="0.29"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <!-- This button is in progress -->
+        <Button Content="Imprimir" Grid.Column="2" Grid.Row="4"  Height="40" Width="130" FontFamily="Times New Roman" FontWeight="Bold" FontSize="18">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF717171" Offset="0.907"/>
+                    <GradientStop Color="#FFB4B4B4" Offset="0.29"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
+        <Button Content="Cerrar" Grid.Column="2" Grid.Row="0" FontFamily="Times New Roman" FontWeight="Bold" FontSize="18" Margin="112,10,10,35" Click="Button_Click_1" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFF00F5"/>
+
+
+
+
+        <Button Content="Ejecutar" Grid.Column="2" Grid.Row="1"  Height="40" Width="130" FontFamily="Times New Roman" FontWeight="Bold" FontSize="18" Name="btn1" Click="btn1_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF717171" Offset="0.907"/>
+                    <GradientStop Color="#FFB4B4B4" Offset="0.29"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
+    </Grid>
+</UserControl>
